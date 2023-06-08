@@ -1,0 +1,10 @@
+[Unit]
+Description=Python script used to start up a lab at boot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /root/EVE-NG-API/startup_lab.py
+WorkingDirectory=/root/EVE-NG-API/
+
+[Install]
+WantedBy=multi-user.target
