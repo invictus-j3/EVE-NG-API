@@ -72,7 +72,7 @@ class eve_ng(object):
         
         # Iterate through the nodes list to start each node
         for n in nodes:
-            url = self.base_api_url + 'labs/' + path.replace(" ", "%20") + lab + '/nodes/' + n + '/start'
+            url = self.base_api_url + 'labs/' + path.replace(" ", "%20") + lab.replace(" ", "%20") + '/nodes/' + n + '/start'
             response = requests.get(url, headers=self.headers, verify=False, cookies=self.session.cookies)
         return response.status_code
 

@@ -8,6 +8,7 @@ def main():
         environ = json.load(e)
         e.close()
 
+    # Sleep timer used to delay startup to allow EVE-NG processes to start
     time.sleep(300)
     
     eve=eve_ng()
