@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import sys, requests, json
+import json, time
 from eve_ng import eve_ng
 
 def main():
@@ -8,6 +8,8 @@ def main():
         environ = json.load(e)
         e.close()
 
+    time.sleep(300)
+    
     eve=eve_ng()
     eve.start_lab_nodes(environ['lab']['name'])
 
