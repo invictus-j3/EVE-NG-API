@@ -1,0 +1,17 @@
+{
+    "server" : {
+        "ip_address" : "192.168.5.114"
+    },
+    "credentials" : {
+        "username" : "admin",
+        "password" : "eve"
+    },
+    "lab" : {
+        "comment" : "Identifies the default lab. Leave path empty if lab is not in a folder.",
+        "name" : "Network Operations.unl",
+        "path" : ""
+    },
+    "logging" : {
+        "dir" : "./logs"
+    }
+}
