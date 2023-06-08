@@ -15,7 +15,7 @@ Variable Details:
 - __Server__
   - Replace _1.2.3.4_ with the IP address or host name of the target EVE-NG server
 - __Credentials__
-  - Contains the defailt EVE-NG username and password
+  - Contains the default EVE-NG username and password
   - Update accordingly
 - __Lab__
   - Identifies the default lab. The lab will be affected if none is specified.
