@@ -3,3 +3,6 @@ __pycache__/
 
 # Ignore working files
 environment.json
+
+# Ignore log files
+*.log
