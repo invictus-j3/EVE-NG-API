@@ -9,7 +9,7 @@ def main():
         e.close()
 
     # Sleep timer, in seconds, used to delay startup to allow EVE-NG processes to start
-    time.sleep(60)
+    time.sleep(30)
     
     eve=eve_ng()
     eve.start_lab_nodes(environ['lab']['name'])

@@ -1,6 +1,6 @@
 [Unit]
 Description=Python script used to start up a lab at boot
-After=network.target
+After=ua-timer.timer
 
 [Service]
 ExecStart=/usr/bin/python3 /root/EVE-NG-API/startup_lab.py
