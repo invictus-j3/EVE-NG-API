@@ -7,3 +7,15 @@ The idea of this respository came from getting tired having to start the same la
 All environment variables are stored in the __environment.json__ file.
 
 Rename __environment-default.json__ to __environment.json__.
+
+Variable Details:
+
+- __Server__
+  - Replace _1.2.3.4_ with the IP address or host name of the target EVE-NG server
+- __Credentials__
+  - Contains the defailt EVE-NG username and password
+  - Update accordingly
+- __Lab__
+  - Identifies the default lab. The lab will be affected if none is specified.
+    - Name: The name of the lab, including the .unl extention.
+    - Path: The lab folder path of the default lab.
