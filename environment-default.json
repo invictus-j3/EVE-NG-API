@@ -1,6 +1,6 @@
 {
     "server" : {
-        "ip_address" : "192.168.5.114"
+        "ip_address" : "1.2.3.4"
     },
     "credentials" : {
         "username" : "admin",
@@ -8,7 +8,7 @@
     },
     "lab" : {
         "comment" : "Identifies the default lab. Leave path empty if lab is not in a folder.",
-        "name" : "Network Operations.unl",
+        "name" : "lab name.unl",
         "path" : ""
     },
     "logging" : {

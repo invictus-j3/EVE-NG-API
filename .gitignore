@@ -1,2 +1,5 @@
 # Ignore python folders
 __pycache__/
+
+# Ignore working files
+environment.json
