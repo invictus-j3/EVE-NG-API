@@ -1,4 +1,4 @@
-# EVE-NG API Class
+# EVE-NG API
 
 _Note_: Active project. Documentation may not be complete.
 
@@ -30,7 +30,7 @@ Edit the JSON file with your server and lab information.
 
 ## Start script at boot
 
-The script _startup_lab.py_ is used to start one or more labs at boot. The current process uses _systemd_ to run the script as a process. The systemd file is set to wait for the _ua-timer.timer_ process to complete before starting. This seems to give EVE-NG enough time to finish so that the script can start the lab(s).
+The script __startup_lab.py__ is used to start one or more labs at boot. The current process uses _systemd_ to run the script as a process. The systemd file is set to wait for the _ua-timer.timer_ process to complete before starting. This seems to give EVE-NG enough time to finish so that the script can start the lab(s).
 
 ### Instructions for Setup
 
@@ -38,13 +38,13 @@ For the easiest setup, ssh with root and clone the repository. This will create 
 
 You will need to update script file path in the __startup_lab.service__.
 
-Change:
+__Change__:
 
 ```bash
 ExecStart=/usr/bin/python3 /root/EVE-NG-API/startup_lab.py
 ```
 
-To:
+__To__:
 
 ```bash
 ExecStart=/usr/bin/python3 <file_path>/startup_lab.py
@@ -62,5 +62,6 @@ Verify the process works by manually starting the service and checkingg on the s
 
 ```bash
 systemctl start startup_lab.service
+
 systemctl status startup_lab.service
 ```
