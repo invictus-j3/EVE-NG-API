@@ -65,3 +65,7 @@ systemctl start startup_lab.service
 
 systemctl status startup_lab.service
 ```
+
+## Multiple Lab on Boot
+
+Add any number of eve.start_lab_nodes() method calls to the startup_lab.py script to start any number of labs.
