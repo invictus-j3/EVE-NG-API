@@ -2,7 +2,7 @@
 
 _Note_: Active project. Documentation may not be complete.
 
-The idea of this respository came from getting tired having to start the same lab everytime the EVE-NG server shutdown or reboot. This workflow is built using the API so it can be used from where with IP connectivity. Cloning this repo to the EVE-NG server will allow the __startup_lab.py__ script to be ran after boot.
+The idea of this respository came from getting tired having to start the same lab everytime the EVE-NG server shutdown or reboot. . Cloning this repo to the EVE-NG server will allow the __startup_lab.py__ script to be ran after boot.
 
 ## Variables
 
