@@ -6,11 +6,11 @@ The idea of this respository came from getting tired having to start the same la
 
 ## Variables
 
-All environment variables are stored in the __environment.json__ file.
+Environment variables are stored in the __environment.json__ file.
 
 Rename __environment-default.json__ to __environment.json__.
 
-```bash
+```sh
 mv environment-default.json environment.json
 ```
 
@@ -36,23 +36,23 @@ The script __startup_lab.py__ is used to start one or more labs at boot. The cur
 
 For the easiest setup, ssh with root and clone the repository. This will create a directory __/root/EVE-NG-API__.
 
-You will need to update script file path in the __startup_lab.service__.
+You only need to update script's path in the __startup_lab.service__ if you clone to another location.
 
 __Change__:
 
-```bash
+```sh
 ExecStart=/usr/bin/python3 /root/EVE-NG-API/startup_lab.py
 ```
 
 __To__:
 
-```bash
+```sh
 ExecStart=/usr/bin/python3 <file_path>/startup_lab.py
 ```
 
 Next move __startup_lab.service__ to the systemd directory and set it to start at boot.
 
-```bash
+```sh
 mv startup_lab.service /etc/systemd/system
 
 systemctl enable startup_lab.service
@@ -60,7 +60,7 @@ systemctl enable startup_lab.service
 
 Verify the process works by manually starting the service and checkingg on the status. Note that the script has a 60 second hold timer to make sure that all other processes are up.
 
-```bash
+```sh
 systemctl start startup_lab.service
 
 systemctl status startup_lab.service
